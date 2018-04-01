@@ -1,0 +1,119 @@
+@-webkit-keyframes beat {
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes beat {
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+html, body {
+  background: #343338;
+  color: #cdccd1;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60vmax;
+  margin: 5vh auto;
+}
+.content .info {
+  padding-left: 15px;
+  border-left: 3px solid #777;
+  font-size: 2vmax;
+}
+.content .info .hash {
+  color: #9997a0;
+}
+.content .social-networks {
+  margin: 2vmax 20vmax 2vmax 0;
+}
+.content .social-networks .social-icons {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+.content .social-networks .social-icons li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 5vmax;
+}
+.content .social-networks span {
+  font-size: 2vmax;
+  text-transform: uppercase;
+}
+.content .social-networks a {
+  color: rgba(255, 255, 255, 0.3);
+  display: block;
+  padding: 0 .5em;
+}
+.content .social-networks a:hover {
+  color: white;
+  -webkit-animation: .3s beat  1;
+          animation: .3s beat  1;
+  text-decoration: none;
+}
+.content .blog {
+  margin: 2vmax 20vmax 2vmax 0;
+}
+.content .blog .blog-list {
+  float: right;
+  display: block;
+  list-style: none;
+}
+.content .blog .blog-list li {
+  display: block;
+  font-size: 3vmax;
+}
+.content .blog span {
+  font-size: 2vmax;
+  text-transform: uppercase;
+}
+.content .blog a {
+  color: #4CAF50;
+  display: block;
+}
+.content .blog a:hover {
+  color: white;
+  -webkit-animation: .3s beat  1;
+          animation: .3s beat  1;
+  text-decoration: none;
+}
+
